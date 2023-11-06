@@ -131,7 +131,11 @@ li{
 }
 
 h2{
-    font-size: 20px;
+    font-size: 25px;
+}
+
+h3{
+    font-size: 15px;
 }
 
 p{
@@ -180,6 +184,10 @@ p{
 
 .color-white{
     color:white;
+}
+
+.color-orange{
+    color:orange;
 }
 
 /*item position*/
