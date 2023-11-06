@@ -59,7 +59,6 @@ main{
 
 .col-100{
     padding: 20px;
-    background-color: blue;
     border: solid black 2px;
     margin: 20px 0;
     width: 100%;
@@ -67,7 +66,6 @@ main{
 
 .col-65{
     padding: 30px 30px 0;
-    background-color: blue;
     border: solid black 2px;
     margin: 20px 0;
     width: 100%;
@@ -75,7 +73,6 @@ main{
 
 .col-50{
     padding: 30px;
-    background-color: blue;
     border: solid black 2px;
     margin: 20px 0;
     width: 100%;
@@ -83,7 +80,6 @@ main{
 
 .col-33{
     padding: 30px;
-    background-color: blue;
     border: solid black 2px;
     margin: 20px 0;
     width: 100%;
@@ -155,6 +151,9 @@ p{
 .color-0084FD{
     color:#0084FD;
 }
+.color-white{
+    color:white;
+}
 
 /*item position*/
 .display-flex{
@@ -192,11 +191,6 @@ p{
         width: calc(100%/3);
     }
 
-    .col-50{
-        width: calc(100%/2);
-    }
-
-
 }
 
 @media screen and (min-width:768px){
@@ -215,6 +209,10 @@ p{
 
     .col-65{
         display: flex;
+    }
+
+    .col-50{
+        width: 50%;
     }
 
 }
