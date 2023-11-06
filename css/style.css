@@ -85,6 +85,13 @@ main{
     width: 100%;
 }
 
+.col-benefits{
+    padding: 30px;
+    border: solid black 2px;
+    margin: 20px 0;
+    width: 100%;
+}
+
 .content{
     height: 400px;
     background-color: red;
@@ -213,6 +220,10 @@ p{
         width: 30%;
     }
 
+    .col-benefits{
+        width: 50%;
+    }
+
 }
 
 @media screen and (min-width:768px){
@@ -235,6 +246,10 @@ p{
 
     .col-50{
         width: 50%;
+    }
+
+    .col-benefits{
+        width: calc(100%/3);
     }
 
 }
