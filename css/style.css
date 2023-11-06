@@ -47,62 +47,49 @@ main{
 
 .container{
     width: 100%;
-    border: solid black 2px;
 }
 
 .row{
     padding: 20px;
-    border: solid black 2px;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .col-100{
     padding: 20px;
-    border: solid black 2px;
-    margin: 20px 0;
     width: 100%;
 }
 
 .col-65{
     padding: 30px 30px 0;
-    border: solid black 2px;
-    margin: 20px 0;
     width: 100%;
 }
 
 .col-50{
     padding: 30px;
-    border: solid black 2px;
-    margin: 20px 0;
     width: 100%;
 }
 
 .col-33{
     padding: 30px;
-    border: solid black 2px;
-    margin: 20px 0;
     width: 100%;
 }
 
 .col-benefits{
     padding: 30px;
-    border: solid black 2px;
-    margin: 20px 0;
     width: 100%;
 }
 
 .content{
     height: 400px;
     background-color: red;
-    border: solid black 2px;
 
 }
 
 /*footer*/
 footer{
     width: 100%;
-    height: 300px;
     background-color: #333333;
 }
 
@@ -131,11 +118,11 @@ li{
 }
 
 h2{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 h3{
-    font-size: 15px;
+    font-size: 10px;
 }
 
 p{
@@ -223,11 +210,15 @@ p{
 /*responsive*/
 @media screen and (min-width:480px){
     .col-65{
-        width: calc(100%/3 * 2);
+        width: calc(100%/3 * 2 - 10px);
     }
 
     .col-33{
-        width: calc(100%/3);
+        width: calc(100%/3 - 10px);
+    }
+
+    .col-65 .max-width-100{
+        max-width: 50%;
     }
 
     .col-100{
@@ -260,8 +251,10 @@ p{
 
 }
 
+
 @media screen and (min-width:768px){
-    .container{
+
+    .row, .row-about-us{
         width: 70%;
     }
 
@@ -279,11 +272,20 @@ p{
     }
 
     .col-50{
-        width: 50%;
+        width: calc(50% - 10px);
     }
 
     .col-benefits{
-        width: calc(100%/3);
+        width: calc(100%/3 - 10px);
     }
+ 
+    .footer{
+        width: 70%;
+    }
+}
 
+@media screen and (min-width:769px) and (max-width:1232px){
+    .col-65 .max-width-100{
+        min-width: 100%;
+    }
 }
