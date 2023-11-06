@@ -126,6 +126,8 @@ li{
 
 .width-testimonial{
     width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 h2{
@@ -141,6 +143,9 @@ p{
     border-radius: 50%;
 }
 
+.padding-20{
+    padding: 20px;
+}
 
 .button-style{
     font-size: 15px;
@@ -150,6 +155,7 @@ p{
     color: white;
     font-weight: bold ;
 }
+
 
 /*bg-color*/
 .bg-white{
@@ -201,6 +207,10 @@ p{
     align-items: stretch;
 }
 
+.position-relative{
+    position: relative;
+}
+
 
 /*responsive*/
 @media screen and (min-width:480px){
@@ -222,6 +232,22 @@ p{
 
     .col-benefits{
         width: 50%;
+    }
+    
+    .row-about-us {
+        display: flex;
+    }
+
+    .row-about-us .col-66{
+        width: 60%;
+    }
+
+    .row-about-us .col-33{
+        width: 40%;
+    }
+
+    .row-about-us .width-testimonial{
+        width: 100%;
     }
 
 }
